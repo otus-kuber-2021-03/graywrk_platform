@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web
+spec:
+  volumes:
+  - name: app
+    emptyDir: {}
+  containers:
+  - name: web
+    image: graywrk/web
+    volumeMounts:
+    - mountPath: /app
+      name: app
+  - name: init
+    image: busybox:1.31.0
+    command: ['sh', '-c', 'wget -O- https://tinyurl.com/otus-k8s-intro | sh']
+    volumeMounts:
+    - mountPath: /app
+      name: app
+
