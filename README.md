@@ -27,3 +27,15 @@ Replicaset не следит за соответсвие подов шаблон
 
 ### DaemonSet на master
 Добавлен параметр tolerations в node-exporter-daemonset
+
+## ДЗ 3
+
+### Task01
+Последовательное применение 01_*.yaml 02_*.yaml и т.д. создает ServiceAccount bob с правами cluster-admin и ServiceAccount dave без прав доступа к кластеру
+
+### Task02
+Последовательное применение 01_*.yaml 02_*.yaml и т.д. создает Namespace prometheus, ServiceAccount carol в этом Namespace, Role cluster-pod-reader с правами на get, list, watch для всех Pods и связывает эту роль со всеми ServiceAccounts в Namespace prometheus
+
+### Task03
+Последовательное применение 01_*.yaml 02_*.yaml и т.д. 
+создает Namespace dev, ServiceAccount jane, дает jane роль admin в рамках Namespace dev, SerivceAccount ken, дает ken роль view в рамках Namespace dev
