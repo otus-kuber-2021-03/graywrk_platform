@@ -39,3 +39,10 @@ Replicaset не следит за соответсвие подов шаблон
 ### Task03
 Последовательное применение 01_*.yaml 02_*.yaml и т.д. 
 создает Namespace dev, ServiceAccount jane, дает jane роль admin в рамках Namespace dev, SerivceAccount ken, дает ken роль view в рамках Namespace dev
+
+
+## ДЗ 4
+Создан Statefulset minio
+Создан Headless-service
+Создан Secret
+Манифест minio изменен для использования секретов из Secret
