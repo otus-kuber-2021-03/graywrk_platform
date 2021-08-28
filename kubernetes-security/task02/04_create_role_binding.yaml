@@ -1,10 +1,10 @@
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: service-pod-read
+  name: service-pod-reader
 subjects:
 - kind: Group
-  name: system:serviceaccount:prometheus
+  name: system:serviceaccounts:prometheus
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   apiGroup: rbac.authorization.k8s.io
