@@ -39,3 +39,25 @@ Replicaset не следит за соответсвие подов шаблон
 ### Task03
 Последовательное применение 01_*.yaml 02_*.yaml и т.д. 
 создает Namespace dev, ServiceAccount jane, дает jane роль admin в рамках Namespace dev, SerivceAccount ken, дает ken роль view в рамках Namespace dev
+
+
+## ДЗ 4
+Создан Statefulset minio
+Создан Headless-service
+Создан Secret
+Манифест minio изменен для использования секретов из Secret
+
+## ДЗ 5
+Добавление проверок Pod
+Создание объекта Deployment
+Добавление сервисов в кластер (ClusterIP)
+Включение режима балансировки IPVS
+Установка MetalLB в Layer2-режиме
+Добавление сервиса LoadBalancer
+Установка Ingress-контроллера и прокси ingress-nginx
+Создание правил Ingress
+
+Дополнительные задания:
+Создан LoadBalancer для доступа к CoreDNS снаружи кластера
+Добавлен доступ к kubernetes-dashboard через Ingress
+Реализовано канареечное развертывание с помощью ingress-nginx
