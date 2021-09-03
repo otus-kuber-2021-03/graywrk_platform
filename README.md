@@ -61,3 +61,7 @@ Replicaset не следит за соответсвие подов шаблон
 Создан LoadBalancer для доступа к CoreDNS снаружи кластера
 Добавлен доступ к kubernetes-dashboard через Ingress
 Реализовано канареечное развертывание с помощью ingress-nginx
+
+## ДЗ 6
+Установка из Helm charts: cert-manager, chartmuseum, harbor
+Использование Jsonnet и Kustomize
