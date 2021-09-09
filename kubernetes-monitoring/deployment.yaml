@@ -10,7 +10,7 @@ spec:
       app: monitoring
   replicas: 3
   minReadySeconds: 10
-  stratige:
+  strategy:
     type: RollingUpdate
     rollingUpdate:
       maxSurge: 100%
