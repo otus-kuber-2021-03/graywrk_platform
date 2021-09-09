@@ -65,3 +65,7 @@ Replicaset не следит за соответсвие подов шаблон
 ## ДЗ 6
 Установка из Helm charts: cert-manager, chartmuseum, harbor
 Использование Jsonnet и Kustomize
+
+## ДЗ 7
+prometheus-operator установлен из Helm чарта
+Создан кастомный образ Nginx, deployment, service, servicemonitor
